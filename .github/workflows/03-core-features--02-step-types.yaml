@@ -22,3 +22,8 @@ jobs:
         # - uses: actions/hello-world-javascript-action@v1 # This would work, but it would be less stable and less secure:
         with:
           who-to-greet: "from an action in the GitHub Action marketplace! 👋"
+    
+  net-stat-using-inline-bash:
+    runs-on: ubuntu-24.04
+    steps:
+      - run: netstat -tulnp
